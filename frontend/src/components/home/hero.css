@@ -1,0 +1,154 @@
+.hero{
+    display: flex;
+    gap: 50px;
+    margin: 40px;
+    padding: 60px;
+    animation: slide 2s ease;
+}
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width:600px;
+}
+.hero-left h3{
+    font-size: 24px;
+    animation: slideRight 2s ease 2s;
+}
+.hero-left h3 span{
+    color: aquamarine;
+}
+.hero-left h4{
+    font-size: 20px;
+}
+
+.hero-left h2{
+    font-size: 24px;
+    background: linear-gradient(to right,green,yellow);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: slideRight 2s ease 2s;
+}
+.hero-left h4 span{
+    background: linear-gradient(300deg,brown,yellow);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: slideTop 2s ease 3s;
+}
+@keyframes slideTop{
+    0%{
+        transform: translateY(800px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.hero-left p{
+    font-size: 18px;
+    animation: slideRight 2s ease 2s;
+}
+.hero-action{
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.hero-icon{
+    display: flex;
+    gap: 30px;
+    animation: slideTop 2s ease 2s;
+}
+.hero-icon img{
+    width: 30px;
+}
+.hero-button{
+    display: flex;
+    gap: 30px;
+    animation: slideBottom 2s ease 2s;
+}
+@keyframes slideBottom{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.hero-button .hired-me,.hero-button .more-about-me{
+    background: linear-gradient(120deg,yellowgreen,aqua);
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.hero-button .more-about-me{
+    background:linear-gradient(120deg,green,yellowgreen);
+}
+.hero-button .hired-me:hover{
+    background: green;
+    transition: all 1s ease-in-out;
+    color: goldenrod;
+}
+.hero-button .more-about-me:hover{
+    background-image: linear-gradient(220deg,yellow,brown);
+    color: aliceblue;
+   transition: all 0.5s ease-in-out;
+    
+}
+@media(width<740px){
+    .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-left{
+        width: 100%;
+    }
+}
+@media (width<440px) {
+    .hero-right img{
+        width: 90%;
+    }
+}
+@media (width<300px) {
+    .hero-left{
+        align-items: flex-start;
+    }
+    .hero-left h2,h3,h4{
+        font-size: 20px;
+    }
+    .hero-left p{
+        font-size: 17px;
+    }
+    .hero-left .hero-icon img{
+        width: 20px;
+    }
+}
+@keyframes slideRight{
+    0%{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slide{
+    0%{
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,151 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin: 36px 5px;
+    padding: 60px;
+    gap:30px;
+    animation:slide 2s ease-in-out;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+.content h1{
+    font-size: 26px;
+    background: linear-gradient(19deg,green,rgb(39, 33, 1));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+}
+.content p{
+    font-size: 19px;
+    line-height: 25px;
+}
+.contact-box{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+    box-shadow: 0 0 2px green;
+    padding: 10px;
+    border-radius: 10px;
+}
+.box{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.box img{
+    width: 40px;
+}
+.box  p{
+    font-size: 19px;
+}
+.box p a{
+    text-decoration: none;
+}
+.box p a:hover{
+    text-decoration: solid;
+}
+.contact-right-info{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px green;
+    background-color: aliceblue;
+    color: black;
+}
+
+.contact-right-info h3{
+    text-align: center;
+    font-size: 20px;
+    color: green;
+    font-style: italic;
+    font-weight: 600;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+form div{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+form div label{
+    font-size: 18px;
+    width: 50px;
+}
+form input,form textarea{
+    width: 300px;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    resize: none;
+}
+form #submit{
+    width: 100px;
+    text-align: center;
+    align-items: center;
+    margin: 10px auto;
+    transition: all 0.7s ease-in-out;
+}
+form #submit:hover{
+    color:goldenrod;
+    background-color: rgb(155, 165, 173);
+}
+@media (width<940px) {
+    .contact-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info,.contact-right-info{
+        width: 500px;
+    }
+}
+@media (width<608px) {
+    .info,.contact-right-info{
+        width: 400px;
+    }
+
+}
+@media (width<510px) {
+    .info{
+        width: 300px;
+    }
+    .contact-right-info{
+        width: 300px;
+    }
+    .contact-right-info h3{
+        font-size: 17px;
+    }
+    form input,form textarea{
+        font-size: 15px;
+    }
+}
+@keyframes slide{
+    0%{
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

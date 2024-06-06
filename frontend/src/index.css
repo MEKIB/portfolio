@@ -1,0 +1,18 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --primary-color:white;
+  --secondary-color:black;
+}
+body{
+  height: 100vh;
+  background-color: var(--primary-color);
+  color:var(--secondary-color);
+  font-family: 'Times New Roman', Times, serif;
+}
+.theme{
+  --primary-color:black;
+  --secondary-color:white;
+}

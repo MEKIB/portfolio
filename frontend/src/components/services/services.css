@@ -1,0 +1,100 @@
+.servicecontainer{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 20px;
+    padding: 60px;
+    animation: slide 2s ease-in-out;
+}
+.servicecontainer h1{
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 40px;
+    color:green;
+    text-align: center;
+}
+.serviceList{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap: 30px;
+}
+.serviceList div{
+    border-radius: 15px;
+    background-color: aliceblue;
+    color: black;
+    padding: 10px 15px;
+    transition: all 0.6s ease;
+}
+.serviceList div:hover{
+    box-shadow: 0 0 10px rgb(14, 100, 197);
+    transform:translate(3px);
+}
+.serviceList div h2{
+    font-size: 24px;
+    font-style: italic;
+    position: relative;
+    margin-bottom: 40px;
+}
+.serviceList div h2::after{
+    content: '';
+    width: 50px;
+    height: 3px;
+    position: absolute;
+    background-color: cadetblue;
+    bottom: -15px;
+    left: 0;
+}
+.serviceList div p{
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+.serviceList button{
+    color: rgb(32, 2, 28);
+    background-color: rgb(186, 194, 186);
+    border: none;
+    outline: none;
+    padding: 7px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-bottom: 6px;
+    transition: all 0.7s ease-in-out;
+}
+.serviceList button:hover{
+    color: brown;
+    background-color: cyan;
+}
+@media (width<578px) {
+    .serviceList{
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+    }
+    .serviceList div{
+        width: 300px;
+    }
+}
+@media (width<374px) {
+    .serviceList div{
+        width: 200px;
+    }
+    .serviceList div p{
+        font-size: 17px;
+    }
+}
+@media (width<282px) {
+    .serviceList div{
+        width: 150px;
+    }
+    .serviceList div h2,.serviceList button{
+        font-size: 19px;
+    }
+}
+@keyframes slide{
+    0%{
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

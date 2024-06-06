@@ -1,0 +1,15 @@
+#footer{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: aliceblue;
+    color: black;
+}
+#footer div{
+    font-size: 20px;
+    display: flex;
+    margin: 5px 18px;
+    align-items: center;
+    justify-content: space-between;
+}
