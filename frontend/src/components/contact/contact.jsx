@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import axios from 'axios'
 import './contact.css'
 import address_icon from '../../assets/address_icon.png'
 import phone_icon from '../../assets/phone_icon.png'
@@ -6,6 +7,7 @@ import email_icon from '../../assets/email.png'
 import Validation from "./Validation";
 import { toast } from "react-toastify";
 import Notification from "./Notification";
+
 function Contact(){
     const[values,setValues]=useState({
         name: "",
@@ -16,10 +18,11 @@ function Contact(){
         setValues({...values,[e.target.name]:[e.target.value]})
     }
     const [errors,setErrors]=useState({})
-    const handleSubmit=(e)=>{
+    const handleSubmit= (e)=>{
         e.preventDefault()
         setErrors(Validation(values))
       if(errors.name===""&&errors.email===""&&errors.message===""){
+        // await axios.post('http://localhost:5000/send', values);
         toast.success("the message is successfully sent")
       }
     }
@@ -38,11 +41,13 @@ function Contact(){
                     </div>
                     <div className="box">
                         <img src={email_icon} alt="" />
-                        <p>mekibibatlaw219@gmail.com</p>
+                        <p><a href="mailto:mekibibatlaw219@gmail.com" title="mail me">mekibibatlaw219@gmail.com</a></p>
+                        {/* <p>mekibibatlaw219@gmail.com</p> */}
                     </div>
                     <div className="box">
                         <img src={phone_icon} alt="" />
-                        <p>0977507901</p>
+                        <p><a href="tel:+0977507901" title="contact me">0977507901</a></p>
+                        {/* <p>0977507901</p> */}
                     </div>
                 </div>
               </div>

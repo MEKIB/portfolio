@@ -49,9 +49,11 @@
 }
 .box  p{
     font-size: 19px;
+    color: rgb(231, 149, 40);
 }
 .box p a{
     text-decoration: none;
+    color: rgb(235, 173, 91);
 }
 .box p a:hover{
     text-decoration: solid;
