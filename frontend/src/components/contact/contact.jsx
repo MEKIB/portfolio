@@ -18,11 +18,11 @@ function Contact(){
         setValues({...values,[e.target.name]:[e.target.value]})
     }
     const [errors,setErrors]=useState({})
-    const handleSubmit= (e)=>{
+    const handleSubmit= async(e)=>{
         e.preventDefault()
         setErrors(Validation(values))
       if(errors.name===""&&errors.email===""&&errors.message===""){
-        // await axios.post('http://localhost:5000/send', values);
+        await axios.post('http://localhost:5000/send', values);
         toast.success("the message is successfully sent")
       }
     }
