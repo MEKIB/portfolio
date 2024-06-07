@@ -3,6 +3,7 @@ import './about.css'
 import aboutImg from '../../assets/port1.png'
 function About(){
     const[about,setAbout]=useState(false)
+    
     return(
         <div className="about">
             <div className="aboutSection">

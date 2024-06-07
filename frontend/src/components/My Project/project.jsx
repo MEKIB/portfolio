@@ -4,6 +4,7 @@ import './project.css'
 import arrowIcon from '../../assets/menu.png'
 import githubIcon from '../../assets/github.png'
 function Project(){
+    
     return(
         <div className="projects">
             <h1>My Projects</h1>

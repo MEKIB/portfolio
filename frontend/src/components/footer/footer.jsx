@@ -3,12 +3,21 @@ import './footer.css'
 function Footer(){
     
     return(
-        <section id='footer'>
-            <div>
-             <p>&copy;2023-{new Date().getFullYear()}</p>
-             <p>Designed by MEKIBIB ATLAW</p>
+        <footer id="footer">
+        <div class="container">
+            <div class="footer-left">
+                <p>&copy; 2023 - <span id="current-year">{new Date().getFullYear()}</span> Designed by MEKIBIB ATLAW</p>
             </div>
-        </section>
+            <div class="footer-right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     )
 }
 export default Footer
