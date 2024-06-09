@@ -4,7 +4,7 @@ import './project.css'
 import arrowIcon from '../../assets/menu.png'
 import githubIcon from '../../assets/github.png'
 import { db } from "../../../configuration/firebase";
-import { collection } from "firebase/firestore";
+import { collection,getDocs} from "firebase/firestore";
 const PAGE_SIZE=4;
 function Project(){
     const[projects,setProjects]=useState([])
