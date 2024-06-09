@@ -18,6 +18,7 @@ body.theme-dark {
     position: fixed;
     top: 0;
     z-index: 1000;
+    height: 35px;
 }
 
 .navbar-container {

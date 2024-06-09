@@ -7,6 +7,7 @@ import Hero from './components/home/hero'
 import About from './components/about/about'
 import Services from './components/services/services'
 import Project from './components/My Project/project'
+import Page from './components/page'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route path='/services' element={<Services/>}/>
       <Route path='/project' element={<Project/>}/>
       <Route path="/contact" element={<Contact/>}/>
+      <Route path='*' element={<Page/>} />
     </Routes>
     <Footer/>
     </>

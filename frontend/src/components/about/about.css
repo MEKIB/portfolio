@@ -35,12 +35,22 @@
     flex-direction: column;
     gap: 8px;
     font-size: 17px;
-    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .about-skills{
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+.about-skills .par{
+    font-size: 34px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-style: italic;
+    background: linear-gradient(70deg,rgb(17, 211, 17),rgb(184, 184, 223));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .about-skill{
     display: flex;

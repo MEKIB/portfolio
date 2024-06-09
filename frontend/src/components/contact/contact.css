@@ -29,6 +29,7 @@
     display: flex;
     gap: 40px;
     justify-content: center;
+    margin-bottom: 55px;
 }
 .info{
     display: flex;
@@ -49,11 +50,11 @@
 }
 .box  p{
     font-size: 19px;
-    color: rgb(231, 149, 40);
+    color: rgb(17, 144, 218);
 }
 .box p a{
     text-decoration: none;
-    color: rgb(235, 173, 91);
+    color: rgb(15, 102, 233);
 }
 .box p a:hover{
     text-decoration: solid;

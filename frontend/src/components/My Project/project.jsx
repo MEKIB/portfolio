@@ -55,7 +55,7 @@ function Project(){
 
                 {visibleProjects.length < projects.length && (
                     <button className="show-more" onClick={showMoreProjects}>Show More</button>
-                )}
+                )} 
             </div> 
         </div>
     )
